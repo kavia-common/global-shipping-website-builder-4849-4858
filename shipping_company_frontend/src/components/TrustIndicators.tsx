@@ -26,7 +26,7 @@ export default function TrustIndicators() {
             // Animate statistics
             anime({
               targets: '.stat-number',
-              innerHTML: function(el) {
+              innerHTML: function(el: Element) {
                 return [0, parseInt(el.getAttribute('data-value') || '0')];
               },
               duration: 2000,
