@@ -83,3 +83,61 @@ body {
   outline: 2px solid #2563EB;
   outline-offset: 2px;
 }
+
+/* Custom utility classes for colors that might not be generated */
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.text-blue-ocean {
+  color: var(--color-blue-ocean);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-text {
+  color: var(--color-text);
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.hover\:bg-blue-ocean:hover {
+  background-color: var(--color-blue-ocean);
+}
+
+.hover\:text-primary:hover {
+  color: var(--color-primary);
+}
+
+.hover\:bg-primary:hover {
+  background-color: var(--color-primary);
+}
+
+.hover\:text-white:hover {
+  color: #ffffff;
+}
+
+/* Background gradient class */
+.bg-gradient-ocean {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgb(249, 250, 251));
+}

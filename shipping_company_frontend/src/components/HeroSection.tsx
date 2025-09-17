@@ -72,14 +72,14 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={false}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="space-y-8"
           >
             <motion.h1 
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-blue-ocean leading-tight"
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
@@ -91,7 +91,7 @@ export default function HeroSection() {
 
             <motion.p 
               className="text-xl text-gray-600 max-w-lg"
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
@@ -103,7 +103,7 @@ export default function HeroSection() {
             <motion.form 
               onSubmit={handleTrackingSubmit}
               className="flex flex-col sm:flex-row gap-4 max-w-md"
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
@@ -131,7 +131,7 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <motion.div 
               className="flex flex-col sm:flex-row gap-4"
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
@@ -154,7 +154,7 @@ export default function HeroSection() {
 
           {/* Statistics */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={false}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="grid grid-cols-2 gap-6"
@@ -162,7 +162,7 @@ export default function HeroSection() {
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
+                initial={false}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
                 className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300"
@@ -181,7 +181,7 @@ export default function HeroSection() {
 
       {/* Scroll Indicator */}
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={false}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.5 }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
