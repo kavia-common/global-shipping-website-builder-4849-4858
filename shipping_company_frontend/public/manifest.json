@@ -1,0 +1,13 @@
+{
+  "name": "Global Shipping Company",
+  "short_name": "ShipCo",
+  "description": "Global Shipping Solutions You Can Trust",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#003366",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
